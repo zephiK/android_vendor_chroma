@@ -62,4 +62,9 @@ PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/chroma/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
+# media effects
+PRODUCT_COPY_FILES +=  \
+    vendor/chroma/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/chroma/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+
 -include vendor/chroma/products/common_fingerprints.mk
