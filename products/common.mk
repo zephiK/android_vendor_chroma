@@ -1,6 +1,6 @@
 # Generic product
-PRODUCT_NAME := rascarlo
-PRODUCT_BRAND := rascarlo
+PRODUCT_NAME := chroma
+PRODUCT_BRAND := chroma
 PRODUCT_DEVICE := generic
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -14,7 +14,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 # Launcher3 supported devices
-ifneq ($(filter rascarlo_hammerhead rascarlo_mako rascarlo_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter chroma_hammerhead chroma_mako chroma_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     Launcher3
 # Auto-rotate
