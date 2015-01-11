@@ -23,3 +23,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Enable tethering
 PRODUCT_PROPERTY_OVERRIDES += \
 net.tethering.noprovisioning=true
+
+# Bootanimation
+PRODUCT_BOOTANIMATION := vendor/rascarlo/proprietary/common/shamu/system/media/bootanimation.zip
+
