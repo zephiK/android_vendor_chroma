@@ -50,8 +50,8 @@ PRODUCT_COPY_FILES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/chroma/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/chroma/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/chroma/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/chroma/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/chroma/prebuilt/common/bin/50-chroma.sh:system/addon.d/50-chroma.sh \
     vendor/chroma/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/chroma/prebuilt/common/etc/backup.conf:system/etc/backup.conf
