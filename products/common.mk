@@ -14,9 +14,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 # Launcher3 supported devices
-ifneq ($(filter rascarlo_hammerhead rascarlo_mako chroma_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter chroma_hammerhead rascarlo_mako chroma_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     Launcher3
+
 # Auto-rotate
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/rascarlo/overlay/Launcher3
@@ -30,12 +31,27 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # STK: overlay common to all devices with telephony
-ifneq ($(filter rascarlo_hammerhead rascarlo_mako chroma_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter chroma_hammerhead rascarlo_mako chroma_shamu,$(TARGET_PRODUCT)),)
 # Build SimToolKit
 PRODUCT_PACKAGES += \
     Stk
 endif
 
-# Latin IME lib
+# Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
+TARGET_USES_BLOCK_BASED_OTA := false
+
+# Latin IME lib - gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/rascarlo/proprietary/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/rascarlo/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+
+# APN list
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/rascarlo/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/rascarlo/prebuilt/common/bin/50-chroma.sh:system/addon.d/50-chroma.sh \
+    vendor/rascarlo/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
+    vendor/rascarlo/prebuilt/common/etc/backup.conf:system/etc/backup.conf
