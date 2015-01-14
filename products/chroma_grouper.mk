@@ -2,10 +2,10 @@
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/rascarlo/products/common.mk)
+$(call inherit-product, vendor/chroma/products/common.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := rascarlo_grouper
+PRODUCT_NAME := chroma_grouper
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := grouper
 PRODUCT_MODEL := Nexus 7
@@ -18,7 +18,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="nakasi-user 5.0.2 LRX22G 1649326 release-keys"
 
 # Inherit media effect blobs
--include vendor/rascarlo/products/common_media_effects.mk
+-include vendor/chroma/products/common_media_effects.mk
 
 # disable strictmode on boot
 PRODUCT_PROPERTY_OVERRIDES += \

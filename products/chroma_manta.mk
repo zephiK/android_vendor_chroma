@@ -2,10 +2,10 @@
 $(call inherit-product, device/samsung/manta/full_manta.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/rascarlo/products/common.mk)
+$(call inherit-product, vendor/chroma/products/common.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := rascarlo_manta
+PRODUCT_NAME := chroma_manta
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := manta
 PRODUCT_MODEL := Nexus 10
@@ -18,4 +18,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="mantaray-user 5.0.1 LRX22C 1602158 release-keys"
 
 # Inherit media effect blobs
--include vendor/rascarlo/products/common_media_effects.mk
+-include vendor/chroma/products/common_media_effects.mk

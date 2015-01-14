@@ -2,7 +2,7 @@
 $(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/rascarlo/products/common.mk)
+$(call inherit-product, vendor/chroma/products/common.mk)
 
 # Setup device specific product configuration.
 PRODUCT_NAME := chroma_shamu
@@ -18,7 +18,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="shamu-user 5.0.2 LRX22G 1649326 release-keys"
 
 # Inherit media effect blobs
--include vendor/rascarlo/products/common_media_effects.mk
+-include vendor/chroma/products/common_media_effects.mk
 
 # Enable tethering
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -26,4 +26,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Boot animation
 PRODUCT_COPY_FILES += \
-    vendor/rascarlo/prebuilt/shamu/system/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/chroma/prebuilt/shamu/system/media/bootanimation.zip:system/media/bootanimation.zip
