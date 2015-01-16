@@ -55,3 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/bin/50-chroma.sh:system/addon.d/50-chroma.sh \
     vendor/chroma/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/chroma/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+
+# T-Mobile theme engine
+#include vendor/chroma/products/themes_common.mk
