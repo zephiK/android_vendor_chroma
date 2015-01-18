@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
 
 # STK: overlay common to all devices with telephony
 ifneq ($(filter chroma_hammerhead chroma_mako chroma_shamu,$(TARGET_PRODUCT)),)
+
 # Build SimToolKit
 PRODUCT_PACKAGES += \
     Stk
@@ -44,16 +45,20 @@ TARGET_USES_BLOCK_BASED_OTA := false
 PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
+# Extra packages
+PRODUCT_PACKAGES += \
+    AudioFX
+
 # APN list
 PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
+    vendor/chroma/prebuilt/common/addon.d/50-chroma.sh:system/addon.d/50-chroma.sh \
+    vendor/chroma/prebuilt/common/addon.d/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/chroma/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/chroma/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/chroma/prebuilt/common/bin/50-chroma.sh:system/addon.d/50-chroma.sh \
-    vendor/chroma/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/chroma/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
 # T-Mobile theme engine
