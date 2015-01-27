@@ -22,7 +22,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Enable tethering
 PRODUCT_PROPERTY_OVERRIDES += \
-	net.tethering.noprovisioning=true
+	net.tethering.noprovisioning=true \
+	persist.debug.wfd.enable=1
 
 # Boot animation
 PRODUCT_COPY_FILES += \
