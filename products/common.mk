@@ -66,3 +66,8 @@ PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/chroma/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/chroma/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+
+# Include chromium prebuilt if opted in
+ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
+include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
+endif
