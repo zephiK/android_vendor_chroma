@@ -66,6 +66,3 @@ PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/chroma/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/chroma/prebuilt/common/etc/backup.conf:system/etc/backup.conf
-
-# T-Mobile theme engine
-#include vendor/chroma/products/themes_common.mk
