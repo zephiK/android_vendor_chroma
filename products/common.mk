@@ -54,6 +54,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/chroma/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/chroma/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/addon.d/50-chroma.sh:system/addon.d/50-chroma.sh \
