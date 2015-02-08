@@ -20,6 +20,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Inherit media effect blobs
 -include vendor/chroma/products/common_media_effects.mk
 
+# Enable tethering
+PRODUCT_PROPERTY_OVERRIDES += \
+	net.tethering.noprovisioning=true \
+	persist.debug.wfd.enable=1
+
 # Boot animation
 PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/hammerhead/system/media/bootanimation.zip:system/media/bootanimation.zip
