@@ -40,7 +40,7 @@ PRODUCT_PACKAGES += \
 endif
 
 # Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
-TARGET_USES_BLOCK_BASED_OTA := false
+#TARGET_USES_BLOCK_BASED_OTA := false
 
 # Latin IME lib - gesture typing
 PRODUCT_COPY_FILES += \
