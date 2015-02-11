@@ -40,7 +40,7 @@ PRODUCT_PACKAGES += \
 endif
 
 # Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
-#TARGET_USES_BLOCK_BASED_OTA := true
+TARGET_USES_BLOCK_BASED_OTA := false
 
 # Latin IME lib - gesture typing
 PRODUCT_COPY_FILES += \
@@ -52,8 +52,7 @@ PRODUCT_PACKAGES += \
 
 # APN list
 PRODUCT_COPY_FILES += \
-    vendor/chroma/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
-    vendor/chroma/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf-cdma.xml
+    vendor/chroma/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
