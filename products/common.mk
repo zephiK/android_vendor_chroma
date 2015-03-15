@@ -62,11 +62,6 @@ PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/chroma/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
-# Bootanimation enhancements
-TARGET_BOOTANIMATION_PRELOAD := true
-TARGET_BOOTANIMATION_TEXTURE_CACHE := true
-TARGET_BOOTANIMATION_USE_RGB565 := true
-
 # Include chromium prebuilt if opted in
 ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
 include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
