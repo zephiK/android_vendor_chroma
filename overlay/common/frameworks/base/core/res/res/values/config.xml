@@ -5,6 +5,8 @@
 
         <!-- The standard AOSP fused location provider -->
         <item>com.android.location.fused</item>
+        <!-- Legacy Google provider -->
+        <item>com.google.android.location</item>
         <!-- The Google provider -->
         <item>com.google.android.gms</item>
     </string-array>
