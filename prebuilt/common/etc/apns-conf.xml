@@ -14857,6 +14857,8 @@
       bearer="16"
   />
 
+  <apn carrier="Sprint LTE internet" mcc="310" mnc="120" apn="n.ispsn" type="default,mms,supl,hipri" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
+
   <apn carrier="24-7 WAP"
       mcc="311"
       mnc="500"
