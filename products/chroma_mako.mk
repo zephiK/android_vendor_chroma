@@ -14,8 +14,8 @@ PRODUCT_MANUFACTURER := LGE
 # FIngerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=occam \
-    BUILD_FINGERPRINT=google/occam/mako:5.0.1/LRX22C/1602158:user/release-keys \
-    PRIVATE_BUILD_DESC="occam-user 5.0.1 LRX22C 1602158 release-keys"
+    BUILD_FINGERPRINT=google/occam/mako:5.1/LMY47I/1767468:user/release-keys \
+    PRIVATE_BUILD_DESC="occam-user 5.1 LMY47I 1767468 release-keys"
 
 # Inherit media effect blobs
 -include vendor/chroma/products/common_media_effects.mk
