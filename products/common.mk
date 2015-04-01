@@ -66,3 +66,6 @@ PRODUCT_COPY_FILES += \
 ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
 include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
 endif
+
+LOCAL_PATH := $(call vendor/chroma/)
+include $(call all-makefiles-under,$(LOCAL_PATH))
