@@ -15,7 +15,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
 # Launcher3 supported devices
-ifneq ($(filter chroma_hammerhead chroma_mako chroma_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter chroma_hammerhead chroma_mako chroma_shamu chroma_grouper chroma_tilapia,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     Launcher3
 
@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # STK: overlay common to all devices with telephony
-ifneq ($(filter chroma_hammerhead chroma_mako chroma_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter chroma_hammerhead chroma_mako chroma_shamu chroma_grouper chroma_tilapia,$(TARGET_PRODUCT)),)
 
 # Build SimToolKit
 PRODUCT_PACKAGES += \
