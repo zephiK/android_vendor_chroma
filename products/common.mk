@@ -19,7 +19,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.lively_timeout=2500 \
     ro.facelock.est_max_time=600 \
     ro.facelock.use_intro_anim=false \
-
+    ro.ril.enable.amr.wideband=1 \
+    net.tethering.noprovisioning=true \
+    persist.sys.dun.override=0 \
+    
 # Launcher3 supported devices
 PRODUCT_PACKAGES += \
     Launcher3
@@ -112,8 +115,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=google/grouper/grouper:5.1/LMY47I/1767468:user/release-keys \
     PRIVATE_BUILD_DESC="grouper-user 5.1 LMY47I 1767468 release-keys"
 endif
-
-
-
-
-
