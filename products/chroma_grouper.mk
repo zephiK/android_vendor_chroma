@@ -11,12 +11,6 @@ PRODUCT_DEVICE := grouper
 PRODUCT_MODEL := Nexus 7 WiFi
 PRODUCT_MANUFACTURER := ASUS
 
-# FIngerprint
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=grouper \
-    BUILD_FINGERPRINT=google/grouper/grouper:5.1/LMY47I/1767468:user/release-keys \
-    PRIVATE_BUILD_DESC="grouper-user 5.1 LMY47I 1767468 release-keys"
-
 # Inherit media effect blobs
 -include vendor/chroma/products/common_media_effects.mk
 

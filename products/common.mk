@@ -65,3 +65,49 @@ endif
 
 LOCAL_PATH := $(call vendor/chroma/)
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+#This is because syko doen't like having to open 20 products just to change numbers
+ifeq ($(TARGET_PRODUCT),chroma_grouper)
+# FIngerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+PRODUCT_NAME=grouper \
+BUILD_FINGERPRINT=google/grouper/grouper:5.1/LMY47I/1767468:user/release-keys \
+PRIVATE_BUILD_DESC="grouper-user 5.1 LMY47I 1767468 release-keys"
+endif
+
+ifeq ($(TARGET_PRODUCT),chroma_hammerhead)
+# Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=hammerhead \
+    BUILD_FINGERPRINT=google/hammerhead/hammerhead:5.1/LMY47I/1767468:user/release-keys \
+    PRIVATE_BUILD_DESC="hammerhead-user 5.1 LMY47I 1767468 release-keys"
+endif
+
+ifeq ($(TARGET_PRODUCT),chroma_mako)
+# FIngerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=occam \
+    BUILD_FINGERPRINT=google/occam/mako:5.1/LMY47I/1767468:user/release-keys \
+    PRIVATE_BUILD_DESC="occam-user 5.1 LMY47I 1767468 release-keys"
+endif
+
+ifeq ($(TARGET_PRODUCT),chroma_shamu)
+# Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=shamu \
+    BUILD_FINGERPRINT=google/shamu/shamu:5.1/LMY47I/1767468:user/release-keys \
+    PRIVATE_BUILD_DESC="shamu-user 5.1 LMY47I 1767468 release-keys"  
+endif
+
+ifeq ($(TARGET_PRODUCT),chroma_tilapia)
+# FIngerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=tilapia \
+    BUILD_FINGERPRINT=google/grouper/grouper:5.1/LMY47I/1767468:user/release-keys \
+    PRIVATE_BUILD_DESC="grouper-user 5.1 LMY47I 1767468 release-keys"
+endif
+
+
+
+
+
