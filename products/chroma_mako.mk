@@ -25,6 +25,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	net.tethering.noprovisioning=true \
 	persist.debug.wfd.enable=1
 
-# Boot animation, use hammerhead till we get mako specific one
+# Boot animation
 PRODUCT_COPY_FILES += \
-    vendor/chroma/prebuilt/hammerhead/system/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/chroma/prebuilt/mako/system/media/bootanimation.zip:system/media/bootanimation.zip
