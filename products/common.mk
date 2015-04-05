@@ -34,8 +34,6 @@ PRODUCT_PACKAGES += \
 # Auto-rotate
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/chroma/overlay/Launcher3
-endif
-
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/chroma/overlay/common
 
@@ -46,7 +44,6 @@ PRODUCT_COPY_FILES += \
 # Build SimToolKit
 PRODUCT_PACKAGES += \
     Stk
-endif
 
 # Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
 #TARGET_USES_BLOCK_BASED_OTA := false
