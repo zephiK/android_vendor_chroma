@@ -98,8 +98,8 @@ ifeq ($(TARGET_PRODUCT),chroma_grouper)
 # FIngerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_NAME=grouper \
-BUILD_FINGERPRINT=google/grouper/grouper:5.1/LMY47I/1767468:user/release-keys \
-PRIVATE_BUILD_DESC="grouper-user 5.1 LMY47I 1767468 release-keys"
+BUILD_FINGERPRINT=google/nakasi/grouper:5.1/LMY47I/1767468:user/release-keys \
+PRIVATE_BUILD_DESC="nakasi-user 5.1 LMY47I 1767468 release-keys"
 endif
 
 ifeq ($(TARGET_PRODUCT),chroma_hammerhead)
@@ -138,6 +138,6 @@ ifeq ($(TARGET_PRODUCT),chroma_tilapia)
 # FIngerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=tilapia \
-    BUILD_FINGERPRINT=google/grouper/grouper:5.1/LMY47I/1767468:user/release-keys \
-    PRIVATE_BUILD_DESC="grouper-user 5.1 LMY47I 1767468 release-keys"
+    BUILD_FINGERPRINT=google/nakasig/grouper:5.1/LMY47I/1767468:user/release-keys \
+    PRIVATE_BUILD_DESC="nakasi-user 5.1 LMY47I 1767468 release-keys"
 endif
