@@ -68,6 +68,12 @@ PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/chroma/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
+#googley
+PRODUCT_COPY_FILES += \
+    vendor/chroma/prebuilt/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
+    vendor/chroma/prebuilt/etc/sysconfig/google_build.xml:system/etc/sysconfig/google_build.xml \
+    vendor/chroma/prebuilt/etc/updatecmds/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
+    
 # Include chromium prebuilt if opted in
 ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
 include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
