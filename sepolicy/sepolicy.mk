@@ -8,5 +8,4 @@ BOARD_SEPOLICY_DIRS += \
 BOARD_SEPOLICY_UNION += \
     system.te \
     service_contexts \
-    file_contexts \
-    mac_permissions.xml
+    file_contexts 
