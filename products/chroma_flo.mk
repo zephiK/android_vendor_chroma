@@ -14,9 +14,9 @@ PRODUCT_MANUFACTURER := ASUS
 # Inherit media effect blobs
 -include vendor/chroma/products/common_media_effects.mk
 
-# Boot animation, use hammerhead till we get mako specific one
+# Boot animation
 PRODUCT_COPY_FILES += \
-    vendor/chroma/prebuilt/hammerhead/system/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/chroma/prebuilt/flo/system/media/bootanimation.zip:system/media/bootanimation.zip
 
 #fmas n7 specific
 PRODUCT_PROPERTY_OVERRIDES += \
