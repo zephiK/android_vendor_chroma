@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
 # Auto-rotate
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/chroma/overlay/Launcher3
+
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/chroma/overlay/common
 
@@ -55,6 +56,10 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     LockClock
+
+# Exchange2
+PRODUCT_COPY_FILES += \
+    vendor/chroma/prebuilt/common/app/Exchange2.apk:system/app/Exchange2/Exchange2.apk
 
 # APN list
 PRODUCT_COPY_FILES += \
