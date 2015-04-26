@@ -31,10 +31,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Launcher3
 
-# Auto-rotate
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/chroma/overlay/Launcher3
-
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/chroma/overlay/common
 
