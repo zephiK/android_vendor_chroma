@@ -51,7 +51,8 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    LockClock
+    LockClock \
+    OTACenter
 
 # Exchange2
 PRODUCT_COPY_FILES += \
@@ -79,7 +80,19 @@ PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
     vendor/chroma/prebuilt/common/etc/sysconfig/google_build.xml:system/etc/sysconfig/google_build.xml \
     vendor/chroma/prebuilt/common/etc/updatecmds/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
-    
+
+# OTA Center
+PRODUCT_VERSION_MAJOR = 5
+PRODUCT_VERSION_MINOR = 1.1
+#PRODUCT_VERSION_MAINTENANCE = Beta-0.1
+
+ROM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.chroma.version=$(ROM_VERSION) \
+    chroma.ota.version=$(shell date -u +%Y%m%d) \
+    ro.modversion=$(ROM_VERSION)
+
 # Include chromium prebuilt if opted in
 ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
 include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
