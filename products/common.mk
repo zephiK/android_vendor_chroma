@@ -22,6 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0 \
     ro.build.selinux=1 \
+    ro.config.vc_music_vol_steps=30 \
     ro.setupwizard.network_required=false \
     ro.setupwizard.gservices_delay=-1 \
     dalvik.vm.image-dex2oat-filter=everything \
