@@ -46,6 +46,11 @@ PRODUCT_PACKAGES += \
 # Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
 #TARGET_USES_BLOCK_BASED_OTA := false
 
+# media effects
+PRODUCT_COPY_FILES +=  \
+    vendor/chroma/prebuilt/common/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/chroma/prebuilt/common/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+
 # Latin IME lib - gesture typing
 PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
