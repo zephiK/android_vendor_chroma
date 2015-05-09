@@ -11,9 +11,6 @@ PRODUCT_DEVICE := hammerhead
 PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 
-# Inherit media effect blobs
--include vendor/chroma/products/common_media_effects.mk
-
 # Enable tethering
 PRODUCT_PROPERTY_OVERRIDES += \
 	net.tethering.noprovisioning=true \

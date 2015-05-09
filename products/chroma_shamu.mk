@@ -11,9 +11,6 @@ PRODUCT_DEVICE := shamu
 PRODUCT_MODEL := Nexus 6
 PRODUCT_MANUFACTURER := motorola
 
-# Inherit media effect blobs
--include vendor/chroma/products/common_media_effects.mk
-
 # Boot animation
 PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/shamu/system/media/bootanimation.zip:system/media/bootanimation.zip

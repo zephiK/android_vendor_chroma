@@ -11,9 +11,6 @@ PRODUCT_DEVICE := mako
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
 
-# Inherit media effect blobs
--include vendor/chroma/products/common_media_effects.mk
-
 # Enable tethering
 PRODUCT_PROPERTY_OVERRIDES += \
 	net.tethering.noprovisioning=true \
