@@ -27,7 +27,8 @@ PRODUCT_PACKAGES += \
     Launcher3
 
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/chroma/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/chroma/overlay/common
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
