@@ -16,9 +16,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0 \
     ro.build.selinux=1 \
-    ro.config.vc_music_vol_steps=30 \
-    dalvik.vm.image-dex2oat-filter=everything \
-    dalvik.vm.dex2oat-filter=everything
+    ro.config.vc_music_vol_steps=30
     
 # Launcher3 supported devices
 PRODUCT_PACKAGES += \
