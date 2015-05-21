@@ -17,8 +17,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0 \
     ro.build.selinux=1 \
     ro.config.vc_music_vol_steps=30 \
-    ro.setupwizard.network_required=false \
-    ro.setupwizard.gservices_delay=-1 \
     dalvik.vm.image-dex2oat-filter=everything \
     dalvik.vm.dex2oat-filter=everything
     
@@ -74,12 +72,6 @@ PRODUCT_COPY_FILES += \
     vendor/chroma/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/chroma/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
-#googley
-PRODUCT_COPY_FILES += \
-    vendor/chroma/prebuilt/common/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
-    vendor/chroma/prebuilt/common/etc/sysconfig/google_build.xml:system/etc/sysconfig/google_build.xml \
-    vendor/chroma/prebuilt/common/etc/updatecmds/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
-    
 # Include chromium prebuilt if opted in
 ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
 include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
