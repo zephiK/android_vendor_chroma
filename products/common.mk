@@ -81,7 +81,6 @@ endif
 LOCAL_PATH := $(call vendor/chroma/)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-
 ifneq ($(filter chroma_hammerhead chroma_mako chroma_manta chroma_flo chroma_deb,$(TARGET_PRODUCT)),)
 # DRM
 PRODUCT_COPY_FILES += \
