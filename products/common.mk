@@ -21,7 +21,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     
 # Launcher3 supported devices
 PRODUCT_PACKAGES += \
-    Launcher3 \
     SlimLauncher
 
 # Common overlay
