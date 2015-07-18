@@ -19,10 +19,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.layers.noIcon=noIcon \
     ro.adb.secure=1 \
     ro.config.vc_music_vol_steps=30
-    
-# Launcher3 supported devices
-PRODUCT_PACKAGES += \
-    SlimLauncher
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += \
@@ -31,10 +27,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
-# Build SimToolKit
-PRODUCT_PACKAGES += \
-    Stk
 
 # Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
 #TARGET_USES_BLOCK_BASED_OTA := false
@@ -51,7 +43,9 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     AudioFX \
-    LockClock
+    LockClock \
+    SlimLauncher \
+    Stk
 
 # Exchange2
 PRODUCT_COPY_FILES += \
