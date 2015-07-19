@@ -16,12 +16,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0 \
     ro.build.selinux=1 \
+    ro.layers.noIcon=noIcon \
     ro.adb.secure=1 \
     ro.config.vc_music_vol_steps=30
-    
-# Launcher3 supported devices
-PRODUCT_PACKAGES += \
-    SlimLauncher
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += \
@@ -30,10 +27,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
-# Build SimToolKit
-PRODUCT_PACKAGES += \
-    Stk
 
 # Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
 #TARGET_USES_BLOCK_BASED_OTA := false
@@ -49,7 +42,10 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    LockClock
+    AudioFX \
+    LockClock \
+    SlimLauncher \
+    Stk
 
 # Exchange2
 PRODUCT_COPY_FILES += \
@@ -82,7 +78,7 @@ endif
 LOCAL_PATH := $(call vendor/chroma/)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-ifneq ($(filter chroma_hammerhead chroma_mako chroma_manta chroma_flo chroma_deb,$(TARGET_PRODUCT)),)
+ifneq ($(filter chroma_hammerhead chroma_mako,$(TARGET_PRODUCT)),)
 # DRM
 PRODUCT_COPY_FILES += \
         vendor/chroma/prebuilt/common/vendor/lib/libwvdrm_L1.so:/system/vendor/lib/libwvdrm_L1.so \
