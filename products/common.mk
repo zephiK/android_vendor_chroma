@@ -45,7 +45,8 @@ PRODUCT_PACKAGES += \
     AudioFX \
     LockClock \
     SlimLauncher \
-    Stk
+    Stk \
+    WallpaperPicker
 
 # Exchange2
 PRODUCT_COPY_FILES += \
