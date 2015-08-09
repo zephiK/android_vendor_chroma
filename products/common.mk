@@ -43,8 +43,8 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     AudioFX \
+    Launcher3 \
     LockClock \
-    SlimLauncher \
     Stk \
     WallpaperPicker
 
