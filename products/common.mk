@@ -45,8 +45,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     Launcher3 \
     LockClock \
-    Stk \
-    WallpaperPicker
+    Stk 
 
 # Exchange2
 PRODUCT_COPY_FILES += \
