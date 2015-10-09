@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
 
 # Latin IME lib - gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/chroma/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/chroma/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 # Extra packages
 PRODUCT_PACKAGES += \
