@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     Busybox \
+    Exchange2 \
     Launcher3 \
     Stk 
 
