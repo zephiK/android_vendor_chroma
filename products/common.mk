@@ -38,6 +38,7 @@ PRODUCT_PACKAGES += \
     Busybox \
     Exchange2 \
     Launcher3 \
+    LockClock \
     Stk 
 
 # APN list
