@@ -1,15 +1,15 @@
 ifeq ($(TARGET_PRODUCT),chroma_angler)
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:6.0.1/MMB29V/2554798:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 6.0.1 MMB29V 2554798 release-keys"
+    BUILD_FINGERPRINT=google/angler/angler:6.0.1/MHC19I/2590160:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user 6.0.1 MHC19I 2590160 release-keys"
 endif
 
 ifeq ($(TARGET_PRODUCT),chroma_bullhead)
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
-    BUILD_FINGERPRINT=google/bullhead/bullhead:6.0.1/MMB29V/2554798:user/release-keys \
-    PRIVATE_BUILD_DESC="bullhead-user 6.0.1 MMB29V 2554798 release-keys"
+    BUILD_FINGERPRINT=google/bullhead/bullhead:6.0.1/MHC19J/2595691:user/release-keys \
+    PRIVATE_BUILD_DESC="bullhead-user 6.0.1 MHC19J 2595691 release-keys"
 endif
 
 ifeq ($(TARGET_PRODUCT),chroma_hammerhead)
