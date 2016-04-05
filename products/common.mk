@@ -39,7 +39,6 @@ endif
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     Busybox \
     Exchange2 \
     Launcher3 \
