@@ -43,7 +43,8 @@ PRODUCT_PACKAGES += \
     Exchange2 \
     Launcher3 \
     LockClock \
-    Stk 
+    masquerade \
+    Stk
 
 # APN list
 PRODUCT_COPY_FILES += \
